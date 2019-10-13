@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMTP Mail Sender Node</title>
+    <link rel="stylesheet" href="../public/style.min.css">
+</head>
+<body>
+    <div class="contaiter">
+        <form method="post" action="send">
+            {{msg}}
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <textarea name="notes"></textarea>
+            <input class="form-submit" type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
