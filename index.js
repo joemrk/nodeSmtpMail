@@ -44,8 +44,8 @@ app.post('/send', (req, res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'arlolrel.lerogrore@gmail.com', // generated ethereal user
-            pass: 'veryhardpass' // generated ethereal password
+            user: 'mailFrom@gmail.com', // generated ethereal user
+            pass: 'pass' // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
@@ -53,8 +53,8 @@ app.post('/send', (req, res) => {
     });
 
     let info = transporter.sendMail({
-        from: '"Node app 👻" <arlolrel.lerogrore@gmail.com>', // sender address
-        to: 'o9ino4ka@gmail.com', // list of receivers
+        from: '"Node app 👻" <mailFrom@gmail.com>', // sender address
+        to: 'mailTo@gmail.com', // list of receivers
         subject: 'Hello from Node✔', // Subject line
         html: output // html body
     });
